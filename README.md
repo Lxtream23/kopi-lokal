@@ -68,9 +68,9 @@ Didesain dengan tampilan modern, hangat, dan responsif — cocok untuk memperken
 ## 📸 Preview
 
 ![Tampilan Website KopiLokal](assets/images/preview1.png)  
-*Tampilan awal website dengan nuansa hangat khas kopi premium.*
-(assets/images/preview2.png)
 
+![Tampilan Website KopiLokal](assets/images/preview2.png)
+*Tampilan awal website dengan nuansa hangat khas kopi premium.*
 ---
 
 ## 👨‍💻 Dibuat oleh
