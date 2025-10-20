@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nikmati cita rasa kopi terbaik dari biji pilihan. Kopi Lokal dengan cita rasa premium, siap menemani harimu.">
+  <title>Kopi Lokal — Premium Coffee</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <!-- Tailwind CDN for quick setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- AOS for scroll reveal -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="antialiased text-gray-900 bg-[#D7CCC8]">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed w-full z-30 transition-colors duration-300">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4 md:p-6">
+      <a href="#hero" class="flex items-center space-x-3">
+        <img src="assets/icons/logo.svg" alt="Logo" class="h-10 w-10">
+        <span class="font-bold text-lg md:text-xl text-white md:text-[#4E342E]">KopiLokal</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6 text-white md:text-[#4E342E]">
+        <a href="#about" class="hover:underline">Tentang</a>
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#testimonials" class="hover:underline">Testimoni</a>
+        <a href="#contact" class="hover:underline">Kontak</a>
+        <a href="#" class="bg-[#4E342E] text-white px-4 py-2 rounded">Pesan Sekarang</a>
+      </div>
+      <button id="nav-toggle" class="md:hidden text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden fixed inset-x-0 top-16 bg-[#4E342E] text-white p-6 z-20">
+    <a href="#about" class="block py-2">Tentang</a>
+    <a href="#menu" class="block py-2">Menu</a>
+    <a href="#testimonials" class="block py-2">Testimoni</a>
+    <a href="#contact" class="block py-2">Kontak</a>
+    <a href="#" class="block py-2 bg-white text-[#4E342E] rounded px-4 py-2 w-max">Pesan Sekarang</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+    <picture class="absolute inset-0 -z-10">
+      <source media="(min-width:1024px)" srcset="assets/images/hero-large.jpg">
+      <img src="assets/images/hero.jpg" alt="Kopi Premium" class="object-cover w-full h-full" loading="lazy">
+    </picture>
+
+    <div class="container mx-auto px-6 md:px-0">
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-playfair text-white drop-shadow-lg leading-tight">Nikmati Cita Rasa Kopi Terbaik Setiap Hari</h1>
+      <p class="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">Dari biji pilihan, dipanggang dengan cinta untuk memberi kehangatan pada harimu.</p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#menu" class="bg-[#4E342E] text-white px-6 py-3 rounded shadow hover:scale-105 transform transition">Lihat Menu</a>
+        <a href="#contact" class="bg-white text-[#4E342E] px-6 py-3 rounded shadow hover:scale-105 transform transition">Pesan Sekarang</a>
+      </div>
+    </div>
+
+    <!-- subtle overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#4E342E]/60 mix-blend-multiply"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-up" data-aos-duration="800">
+        <h2 class="text-3xl font-playfair text-[#4E342E]">Tentang Kami</h2>
+        <p class="mt-4 text-gray-800">KopiLokal lahir dari kecintaan pada cita rasa kopi Nusantara. Kami memilih biji terbaik, memanggang secara artisan, dan menjaga kualitas setiap cangkir.</p>
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-[#8D6E63]" fill="#8D6E63" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            <span>Bijian pilihan dari petani lokal</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-[#8D6E63]" fill="#8D6E63" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+            <span>Proses sangrai artisan</span>
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg bg-white" data-aos="zoom-in" data-aos-duration="900">
+        <img src="assets/images/mywall-photography-5XDxqzjdapw-unsplash.jpg" alt="Biji Kopi" class="w-full h-80 object-cover" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Kenapa Memilih Kami -->
+  <section class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-playfair text-[#4E342E]" data-aos="fade-up">Kenapa Memilih Kami</h3>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="50">
+          <img src="assets/icons/icon-quality.svg" class="h-12 mx-auto" alt="Kualitas">
+          <h4 class="mt-4 font-semibold">Kualitas Premium</h4>
+          <p class="mt-2 text-sm text-gray-600">Biji pilihan, proses terkontrol.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/icons/icon-flavor.svg" class="h-12 mx-auto" alt="Rasa">
+          <h4 class="mt-4 font-semibold">Cita Rasa Otentik</h4>
+          <p class="mt-2 text-sm text-gray-600">Profil rasa yang kaya dan seimbang.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/icons/icon-community.svg" class="h-12 mx-auto" alt="Komunitas">
+          <h4 class="mt-4 font-semibold">Dukungan Lokal</h4>
+          <p class="mt-2 text-sm text-gray-600">Berkembang bersama petani setempat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu / Produk -->
+  <section id="menu" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-playfair text-[#4E342E] text-center" data-aos="fade-up">Varian Menu</h2>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="50">
+          <img src="assets/images/latte.png" alt="Latte" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-4">
+            <h4 class="font-semibold">Caffè Latte</h4>
+            <p class="text-sm text-gray-600 mt-2">Rp 28.000</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/images/espresso.png" alt="Espresso" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-4">
+            <h4 class="font-semibold">Espresso</h4>
+            <p class="text-sm text-gray-600 mt-2">Rp 22.000</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="250">
+          <img src="assets/images/americano.png" alt="Americano" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-4">
+            <h4 class="font-semibold">Americano</h4>
+            <p class="text-sm text-gray-600 mt-2">Rp 24.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimonials" class="py-16 bg-[#F7F3F2]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-playfair text-[#4E342E]" data-aos="fade-up">Apa Kata Mereka</h3>
+      <div id="carousel" class="mt-8 relative">
+        <div class="carousel-inner overflow-hidden relative h-56">
+          <div class="carousel-item absolute inset-0 transition-opacity duration-700 opacity-100" data-aos="fade-right">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/user1.jpg" alt="user" class="w-16 h-16 rounded-full object-cover">
+              <div class="text-left">
+                <p class="font-semibold">Andi</p>
+                <p class="text-sm text-gray-600">"Aromanya menggugah, dan rasanya seimbang. Favorit saya setiap pagi."</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item absolute inset-0 transition-opacity duration-700 opacity-0" data-aos="fade-right">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/user2.jpg" alt="user" class="w-16 h-16 rounded-full object-cover">
+              <div class="text-left">
+                <p class="font-semibold">Sari</p>
+                <p class="text-sm text-gray-600">"Kafein pas, tidak pahit berlebihan. Suasananya hangat."</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item absolute inset-0 transition-opacity duration-700 opacity-0" data-aos="fade-right">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/user3.jpg" alt="user" class="w-16 h-16 rounded-full object-cover">
+              <div class="text-left">
+                <p class="font-semibold">Budi</p>
+                <p class="text-sm text-gray-600">"Tempat nyaman dan kopinya selalu konsisten."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 flex justify-center gap-3">
+          <button class="w-3 h-3 rounded-full bg-[#4E342E]" data-slide="0"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+          <button class="w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-playfair text-[#4E342E]" data-aos="fade-up">Kontak & Lokasi</h3>
+        <p class="mt-4 text-gray-700">Jl. Kenangan No.12, Kota Kopi — Buka: 07:00 - 20:00</p>
+
+        <div class="mt-6">
+          <a href="https://wa.me/628123456789" class="inline-block bg-[#4E342E] text-white px-4 py-2 rounded">Hubungi Kami (WhatsApp)</a>
+          <a href="https://instagram.com" class="inline-block ml-4 bg-white text-[#4E342E] px-4 py-2 rounded border">Instagram</a>
+        </div>
+      </div>
+      <div data-aos="zoom-in">
+        <!-- Google Maps embed (lazy-loaded). Replace src with exact place if desired -->
+        <div class="rounded-lg overflow-hidden shadow-lg map-wrap">
+          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.123456789!2d106.84513!3d-6.21462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAwJzAwLjAiTiAxMDbCsDUwJzAwLjAiVw!5e0!3m2!1sid!2sid!4v1600000000000" style="border:0; width:100%; height:100%; min-height:260px;" referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter & Footer -->
+  <footer class="bg-[#4E342E] text-white py-8">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+    <!-- Kolom kiri -->
+    <div>
+      <img src="assets/icons/logo-white.svg" alt="logo" class="h-10">
+      <p class="mt-2 text-sm">KopiLokal — Menyajikan kopi premium dari petani lokal.</p>
+    </div>
+
+    <!-- Kolom tengah (newsletter) -->
+    <div class="flex justify-center">
+      <form id="newsletter" class="flex gap-2">
+        <input type="email" placeholder="Masukkan email" required
+          class="px-4 py-2 rounded text-black focus:outline-none focus:ring-2 focus:ring-[#8D6E63]" />
+        <button
+          class="bg-[#8D6E63] px-4 py-2 rounded text-white hover:bg-[#6D4C41] transition">Berlangganan</button>
+      </form>
+    </div>
+
+    <!-- Kolom kanan -->
+    <div class="text-sm text-right">
+      <p>Jam Buka: 07:00 - 20:00</p>
+      <div class="mt-3 flex justify-end gap-4">
+        <a href="#"><img src="assets/icons/ig.svg" alt="Instagram" class="h-6 hover:opacity-80 transition"></a>
+        <a href="#"><img src="assets/icons/fb.svg" alt="Facebook" class="h-6 hover:opacity-80 transition"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    // Simple navbar color change on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('bg-[#D7CCC8]', 'backdrop-blur', 'shadow');
+      } else {
+        navbar.classList.remove('bg-[#D7CCC8]', 'backdrop-blur', 'shadow');
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Simple carousel
+    (function(){
+      const items = document.querySelectorAll('#carousel .carousel-item');
+      const dots = document.querySelectorAll('#carousel [data-slide]');
+      let index = 0;
+      function show(i){
+        items.forEach((it,idx)=>{
+          it.style.opacity = idx===i? '1' : '0';
+        });
+        dots.forEach((d,idx)=> d.classList.toggle('bg-[#4E342E]', idx===i));
+      }
+      dots.forEach(d=> d.addEventListener('click', ()=>{ index = Number(d.dataset.slide); show(index); }));
+      setInterval(()=>{ index = (index+1)%items.length; show(index); }, 4000);
+    })();
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once:true, easing: 'ease-out-cubic' });
+  </script>
+</body>
+</html>
